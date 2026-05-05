@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.analysis.typeCheckingMode": "off",
+        "python.analysis.diagnosticSeverityOverrides": {
+            "reportCallIssue": "none"
+        }
+    }
+}
