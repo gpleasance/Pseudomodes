@@ -6,3 +6,4 @@
 *.egg-info/
 pyrightconfig.json
 Python.code-workspace
+data/
