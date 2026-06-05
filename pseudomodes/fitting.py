@@ -77,19 +77,19 @@ def pm_parameters(
     S = linalg.eig(gm0)[1].T
 
     # PM parameters : sys-pm couplings, internal couplings, decay rates
-    g = np.real(c0 * S.dot((1/(np.sqrt(2*(mu+1))))*(r + np.conj(r))))
+    gp = np.real(c0 * S.dot((1/(np.sqrt(2*(mu+1))))*(r + np.conj(r))))
     xi = S.dot(xi0.dot(S.T))
     gm = S.dot(gm0.dot(S.T))
 
     # Information on pm parameters
     info_dict = {
-    'sys couplings': 'g = \n {0}'.format(np.round(g, 5)),
+    'sys couplings': 'gp = \n {0}'.format(np.round(gp, 5)),
     'int couplings': 'xi = \n {0}'.format(np.round(xi, 5)),
     'decay rates': 'gm = \n {0}'.format(np.round(np.diag(gm), 5)),
-    'all': 'g = \n {0}\n\n'.format(np.round(np.real(g), 5))+'xi = \n {0}\n\n'.format(np.round(xi, 5)) + 'gm = \n {0}'.format(np.round(np.diag(gm), 5)) 
+    'all': 'gp = \n {0}\n\n'.format(np.round(np.real(gp), 5))+'xi = \n {0}\n\n'.format(np.round(xi, 5)) + 'gm = \n {0}'.format(np.round(np.diag(gm), 5)) 
     }
 
-    return (g, xi, gm, info_dict) if info==True else (g, xi, gm)
+    return (gp, xi, gm, info_dict) if info==True else (gp, xi, gm)
 
 
 def bcf_fit(
