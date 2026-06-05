@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-REQUIRES = ['numpy', 'scipy', 'qutip']
+REQUIRES = ['numpy', 'scipy', 'qutip', 'oqupy']
 
 setup(
     name="pseudomodes",
