@@ -1,5 +1,5 @@
 """
-Module for exponentially fitting bath correlation functions and extracting pseudomode information.
+Module for exponentially fitting bath correlation functions and extracting pseudomode parameters.
 """
 import numpy as np
 from numpy import ndarray

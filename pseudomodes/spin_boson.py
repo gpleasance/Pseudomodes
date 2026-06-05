@@ -281,8 +281,8 @@ def pm_liouvillian(
     ----------
     sys : Qobj, 
         System Hamiltonian. 
-    coup_op : Obj, dims?
-        System coupling operator(s)?
+    coup_op : Obj,
+        System coupling operator.
     sys_pm_coup : array_like, shape (n,)
         1D array of system-pm couplings. 
     pm_params : array_like, shape (n,n)
