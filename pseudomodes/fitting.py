@@ -1,5 +1,5 @@
 """
-Module for fitting the correlation functions and power spectra of Gaussian baths, and extracting pseudomode parameters.
+Module for fitting the BCF and PS of Gaussian baths and pseudomode parameter extraction.
 """
 import numpy as np
 from numpy import ndarray
