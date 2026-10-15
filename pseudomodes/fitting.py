@@ -2,7 +2,7 @@
 Module for fitting the BCF and PS of Gaussian baths and extracting pseudomode parameters.
 """
 import numpy as np
-from numpy import nd
+from numpy import ndarray
 from numpy import linalg
 from lmfit import Parameters, minimize
 # from numpy.typing import ArrayLike
